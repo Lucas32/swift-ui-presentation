@@ -15,18 +15,12 @@ struct LoPeor: View {
             title: "Lo peor 💀",
             content: {
                 VStack {
-                    Text("No hay mucha información en los reportes de crashes")
-                    
-                    NavigationLink(destination: CrashView()) {
-                        Text("Navigate to view with environment")
-                            .foregroundColor(.green)
-                            .padding()
-                    }
+                    Text("No hay mucha información en los reportes de crashes 😵‍💫")
                     
                     Button(action: {
                         showCrashView.toggle()
                     }, label: {
-                        Text("Show full screen cover with environment")
+                        Text("Ver ejemplo")
                             .foregroundColor(.red)
                             .padding()
                     })
