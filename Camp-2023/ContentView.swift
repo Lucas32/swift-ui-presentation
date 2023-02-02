@@ -8,14 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var message: String = ""
+    @State var messages: [String] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 0) {
+            Text("Chat")
+                .padding(8)
+            
+            Divider()
+            
+            Spacer()
+            
+            ForEach(messages, id: \.self) { message in
+                HStack {
+                    Text(message)
+                        .padding(.vertical, 4)
+                        .padding(.horizontal, 12)
+                        .foregroundColor(.white)
+                        .background(RoundedRectangle(cornerRadius: 8).foregroundColor(.blue))
+                        
+                    Spacer()
+                }
+                .padding(.horizontal)
+                .padding(.vertical, 4)
+            }
+            
+            Divider()
+                .padding(.top, 8)
+            
+            HStack(spacing: 10) {
+                TextField("Message", text: $message)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                Button("Send") {
+                    messages.append(message)
+                    message = ""
+                }.disabled(message.isEmpty)
+            }.padding()
         }
-        .padding()
     }
 }
 
