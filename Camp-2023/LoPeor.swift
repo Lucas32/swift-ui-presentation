@@ -15,7 +15,7 @@ struct LoPeor: View {
             title: "Lo peor 💀",
             content: {
                 VStack {
-                    Text("No hay mucha información en los reportes de crashes 😵‍💫")
+                    SubTitle(title: "No hay mucha información en los reportes de crashes 😵‍💫")
                     
                     Button(action: {
                         showCrashView.toggle()
