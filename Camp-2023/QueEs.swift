@@ -10,7 +10,7 @@ import SwiftUI
 struct QueEs: View {
     var body: some View {
         TextSlide(
-            title: "Qué es",
+            title: "¿Qué es?",
             content: {
                 VStack(alignment: .leading) {
                     Text("SwiftUI es un framework de Apple para la creación de Vistas que viene a sustituir a 'UIKit'. Está diseñado para aprovechar todo el potencial de 'Swift', ya que ha sido creado desde cero teniendo en cuenta todo lo que este lenguaje nos proporciona.")

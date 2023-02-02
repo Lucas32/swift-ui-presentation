@@ -8,28 +8,40 @@
 import SwiftUI
 
 struct Menu: View {
+    private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
+    
     var body: some View {
         GeometryReader { proxy in
             NavigationView {
                 HStack {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("SwiftUI")
-                            .font(.system(size: 100))
+                            .font(.system(size: idiom == .pad ? 100 : 50))
                         
                         VStack(alignment: .leading, spacing: 0) {
                             NavigationLink(destination: QueEs()) {
                                 Item(text: "Qué es")
                             }
-                            Item(text: "Lo bueno")
-                            Item(text: "Lo malo")
-                            Item(text: "Lo peor")
-                            Item(text: "Conclusiones")
-                            Item(text: "Preguntas")
+                            NavigationLink(destination: LoBueno()) {
+                                Item(text: "Lo bueno")
+                            }
+                            NavigationLink(destination: LoMalo()) {
+                                Item(text: "Lo malo")
+                            }
+                            NavigationLink(destination: LoPeor()) {
+                                Item(text: "Lo peor")
+                            }
+                            NavigationLink(destination: Conclusiones()) {
+                                Item(text: "Conclusiones")
+                            }
+                            NavigationLink(destination: Preguntas()) {
+                                Item(text: "Preguntas")
+                            }
                         }
                         .font(.system(size: 60))
                         .padding(.top, 20)
                         
-                    }.padding(.leading, 100)
+                    }.padding(.leading, idiom == .pad ? 100 : 30)
                     Spacer()
                 }
                 .background {
@@ -43,7 +55,7 @@ struct Menu: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: proxy.size.width / 4)
-                            .padding(.leading, 300)
+                            .padding(.leading, idiom == .pad ? 300 : 250)
                     }
                 }
             }
@@ -55,13 +67,15 @@ struct Menu: View {
     
     struct Item: View {
         var text: String
+        private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
         
         var body: some View {
-            HStack(spacing: 40) {
+            HStack(spacing: idiom == .pad ? 40 : 10) {
                 Circle()
-                    .frame(width: 20, height: 40)
+                    .frame(width: idiom == .pad ? 20 : 10)
                     
                 Text(text)
+                    .font(.system(size: idiom == .pad ? 40 : 30))
             }
         }
     }

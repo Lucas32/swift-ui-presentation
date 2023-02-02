@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     @State var startedPresentation = false
+    @StateObject var vm = SomeViewModel()
     
     var body: some View {
         if (!startedPresentation) {
             Cover(startedPresentation: $startedPresentation)
         } else {
             Menu()
+                .environmentObject(vm)
         }
     }
 }
