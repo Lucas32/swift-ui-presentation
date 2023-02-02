@@ -19,10 +19,16 @@ struct Interoperabilidad: View {
                 
                 Text("Es posible agregar código SwiftUI a una app existente (UIHostingController)")
                 
-                Text("O puedes agregar código UIKit a una nueva app con interface declarativa (UIViewResponsable)")
-                    .onTapGesture {
-                        showUIKitView.toggle()
-                    }
+                HStack {
+                    Text("O puedes agregar código UIKit a una nueva app con interface declarativa (UIViewRepresentable y UIViewControllerRepresentable)")
+                    
+                    Text("Ejemplo")
+                        .padding(4)
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            showUIKitView.toggle()
+                        }
+                }
               
             }.padding()
         }
