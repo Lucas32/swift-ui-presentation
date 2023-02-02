@@ -65,9 +65,7 @@ struct CrashView: View {
 }
 
 struct CrashView_Previews: PreviewProvider {
-    static let vm = SomeViewModel()
     static var previews: some View {
         CrashView()
-            .environmentObject(vm)
     }
 }
