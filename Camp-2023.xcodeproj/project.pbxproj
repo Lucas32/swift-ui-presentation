@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10F9030C298BC78900315F4E /* Camp_2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9030B298BC78900315F4E /* Camp_2023App.swift */; };
 		10F9030E298BC78900315F4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9030D298BC78900315F4E /* ContentView.swift */; };
 		10F90310298BC78A00315F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F9030F298BC78A00315F4E /* Assets.xcassets */; };
 		10F90314298BC78A00315F4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F90313298BC78A00315F4E /* Preview Assets.xcassets */; };
 		10F9031E298BC78A00315F4E /* Camp_2023Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9031D298BC78A00315F4E /* Camp_2023Tests.swift */; };
 		10F90328298BC78A00315F4E /* Camp_2023UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90327298BC78A00315F4E /* Camp_2023UITests.swift */; };
 		10F9032A298BC78A00315F4E /* Camp_2023UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90329298BC78A00315F4E /* Camp_2023UITestsLaunchTests.swift */; };
+		10F90337298BE34300315F4E /* PresentationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90336298BE34300315F4E /* PresentationApp.swift */; };
+		10F9033B298BE60600315F4E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9033A298BE60600315F4E /* Menu.swift */; };
+		10F9033D298BF75600315F4E /* QueEs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9033C298BF75600315F4E /* QueEs.swift */; };
+		10F9033F298BF84E00315F4E /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9033E298BF84E00315F4E /* Cover.swift */; };
+		10F90342298BFA2200315F4E /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90341298BFA2200315F4E /* Background.swift */; };
+		10F90344298BFA9800315F4E /* TextSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90343298BFA9800315F4E /* TextSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		10F90308298BC78900315F4E /* Camp-2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camp-2023.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10F9030B298BC78900315F4E /* Camp_2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camp_2023App.swift; sourceTree = "<group>"; };
 		10F9030D298BC78900315F4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		10F9030F298BC78A00315F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10F90311298BC78A00315F4E /* Camp_2023.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Camp_2023.entitlements; sourceTree = "<group>"; };
@@ -45,6 +49,12 @@
 		10F90323298BC78A00315F4E /* Camp-2023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camp-2023UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F90327298BC78A00315F4E /* Camp_2023UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camp_2023UITests.swift; sourceTree = "<group>"; };
 		10F90329298BC78A00315F4E /* Camp_2023UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camp_2023UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10F90336298BE34300315F4E /* PresentationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationApp.swift; sourceTree = "<group>"; };
+		10F9033A298BE60600315F4E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		10F9033C298BF75600315F4E /* QueEs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueEs.swift; sourceTree = "<group>"; };
+		10F9033E298BF84E00315F4E /* Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
+		10F90341298BFA2200315F4E /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		10F90343298BFA9800315F4E /* TextSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +105,15 @@
 		10F9030A298BC78900315F4E /* Camp-2023 */ = {
 			isa = PBXGroup;
 			children = (
-				10F9030B298BC78900315F4E /* Camp_2023App.swift */,
+				10F90340298BFA1300315F4E /* Components */,
 				10F9030D298BC78900315F4E /* ContentView.swift */,
 				10F9030F298BC78A00315F4E /* Assets.xcassets */,
 				10F90311298BC78A00315F4E /* Camp_2023.entitlements */,
 				10F90312298BC78A00315F4E /* Preview Content */,
+				10F90336298BE34300315F4E /* PresentationApp.swift */,
+				10F9033A298BE60600315F4E /* Menu.swift */,
+				10F9033C298BF75600315F4E /* QueEs.swift */,
+				10F9033E298BF84E00315F4E /* Cover.swift */,
 			);
 			path = "Camp-2023";
 			sourceTree = "<group>";
@@ -127,6 +141,15 @@
 				10F90329298BC78A00315F4E /* Camp_2023UITestsLaunchTests.swift */,
 			);
 			path = "Camp-2023UITests";
+			sourceTree = "<group>";
+		};
+		10F90340298BFA1300315F4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10F90341298BFA2200315F4E /* Background.swift */,
+				10F90343298BFA9800315F4E /* TextSlide.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F9033B298BE60600315F4E /* Menu.swift in Sources */,
+				10F90344298BFA9800315F4E /* TextSlide.swift in Sources */,
+				10F9033D298BF75600315F4E /* QueEs.swift in Sources */,
 				10F9030E298BC78900315F4E /* ContentView.swift in Sources */,
-				10F9030C298BC78900315F4E /* Camp_2023App.swift in Sources */,
+				10F9033F298BF84E00315F4E /* Cover.swift in Sources */,
+				10F90337298BE34300315F4E /* PresentationApp.swift in Sources */,
+				10F90342298BFA2200315F4E /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +455,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -465,8 +493,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

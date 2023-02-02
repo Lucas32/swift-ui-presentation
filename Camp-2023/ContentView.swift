@@ -8,44 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var message: String = ""
-    @State var messages: [String] = []
+    
+    @State var startedPresentation = false
     
     var body: some View {
-        VStack(spacing: 0) {
-            Text("Chat")
-                .padding(8)
-            
-            Divider()
-            
-            Spacer()
-            
-            ForEach(messages, id: \.self) { message in
-                HStack {
-                    Text(message)
-                        .padding(.vertical, 4)
-                        .padding(.horizontal, 12)
-                        .foregroundColor(.white)
-                        .background(RoundedRectangle(cornerRadius: 8).foregroundColor(.blue))
-                        
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.vertical, 4)
-            }
-            
-            Divider()
-                .padding(.top, 8)
-            
-            HStack(spacing: 10) {
-                TextField("Message", text: $message)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                Button("Send") {
-                    messages.append(message)
-                    message = ""
-                }.disabled(message.isEmpty)
-            }.padding()
+        if (!startedPresentation) {
+            Cover(startedPresentation: $startedPresentation)
+        } else {
+            Menu()
         }
     }
 }
@@ -54,4 +24,70 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class SGConvenience{
+    #if os(watchOS)
+    static var deviceWidth: CGFloat = WKInterfaceDevice.current().screenBounds.size.width
+    #elseif os(iOS)
+    static var deviceWidth: CGFloat = UIScreen.main.bounds.size.width
+    #elseif os(macOS)
+    static var deviceWidth: CGFloat? = NSScreen.main?.visibleFrame.size.width // You could implement this to force a CGFloat and get the full device screen size width regardless of the window size with .frame.size.width
+    #endif
+    
+    #if os(watchOS)
+    static var deviceHeight: CGFloat = WKInterfaceDevice.current().screenBounds.size.height
+    #elseif os(iOS)
+    static var deviceHeight: CGFloat = UIScreen.main.bounds.size.height
+    #elseif os(macOS)
+    static var deviceHeight: CGFloat? = NSScreen.main?.visibleFrame.size.height // You could implement this to force a CGFloat and get the full device screen size width regardless of the window size with .frame.size.width
+    #endif
 }
