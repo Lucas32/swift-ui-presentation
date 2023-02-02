@@ -19,9 +19,7 @@ struct FacilDeAprender: View {
             }.padding()
         }
         .background {
-            RoundedRectangle(cornerRadius: 20)
-                .foregroundColor(.white)
-                .opacity(0.4)
+            RoundedWhiteTransparentBackground()
         }
         .multilineTextAlignment(.leading)
     }

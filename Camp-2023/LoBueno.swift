@@ -14,16 +14,22 @@ struct LoBueno: View {
             content: {
                 TabView() {
                     FacilDeAprender()
+                        .padding(.horizontal, 4)
                     
                     CodigoConciso()
+                        .padding(.horizontal, 4)
                     
                     PreviewsView()
+                        .padding(.horizontal, 4)
                     
                     NoMasStoryboards()
+                        .padding(.horizontal, 4)
                     
                     PermiteCrearWidgets()
+                        .padding(.horizontal, 4)
                     
                     Interoperabilidad()
+                        .padding(.horizontal, 4)
                 }
                 .tabViewStyle(.page)
                 .foregroundColor(.black)
@@ -40,7 +46,7 @@ struct SubTitle: View {
         Text(title)
             .foregroundColor(.white)
             .font(.system(size: 36))
-            .padding(.vertical, 20)
+            .padding(.vertical, 12)
     }
 }
 

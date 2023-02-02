@@ -31,6 +31,7 @@
 		10F9035D298C1D3700315F4E /* NoMasStoryboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9035C298C1D3700315F4E /* NoMasStoryboards.swift */; };
 		10F9035F298C1D6400315F4E /* PermiteCrearWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9035E298C1D6400315F4E /* PermiteCrearWidgets.swift */; };
 		10F90361298C1D8F00315F4E /* Interoperabilidad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90360298C1D8F00315F4E /* Interoperabilidad.swift */; };
+		10F90363298C244700315F4E /* RoundedWhiteTransparentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90362298C244700315F4E /* RoundedWhiteTransparentBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		10F9035C298C1D3700315F4E /* NoMasStoryboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMasStoryboards.swift; sourceTree = "<group>"; };
 		10F9035E298C1D6400315F4E /* PermiteCrearWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermiteCrearWidgets.swift; sourceTree = "<group>"; };
 		10F90360298C1D8F00315F4E /* Interoperabilidad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interoperabilidad.swift; sourceTree = "<group>"; };
+		10F90362298C244700315F4E /* RoundedWhiteTransparentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteTransparentBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			children = (
 				10F90341298BFA2200315F4E /* Background.swift */,
 				10F90343298BFA9800315F4E /* TextSlide.swift */,
+				10F90362298C244700315F4E /* RoundedWhiteTransparentBackground.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				10F9035D298C1D3700315F4E /* NoMasStoryboards.swift in Sources */,
 				10F90344298BFA9800315F4E /* TextSlide.swift in Sources */,
 				10F9034A298C098E00315F4E /* LoPeor.swift in Sources */,
+				10F90363298C244700315F4E /* RoundedWhiteTransparentBackground.swift in Sources */,
 				10F9033D298BF75600315F4E /* QueEs.swift in Sources */,
 				10F90361298C1D8F00315F4E /* Interoperabilidad.swift in Sources */,
 				10F90352298C0D7600315F4E /* CrashView.swift in Sources */,
