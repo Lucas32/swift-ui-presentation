@@ -34,6 +34,7 @@ struct Background: View {
                     .padding()
                 Spacer()
             }
+            .padding()
         }
     }
 }

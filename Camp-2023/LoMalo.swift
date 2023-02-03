@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct LoMalo: View {
-    var body: some View {
+    var body: some View {        
         TextSlide(
             title: "Lo malo ❌",
             content: {
-                VStack {
-                    Text("Como es un lenguaje joven, la comunidad es relativamente chica")
+                TabView() {
+                    LenguajeJoven()
+                        .padding(.horizontal, 4)
+                    SoportadoDesde13()
+                        .padding(.horizontal, 4)
+                    InfraestructuraUIKitAppKit()
+                        .padding(.horizontal, 4)
+                    
                 }
+                .tabViewStyle(.page)
+                .foregroundColor(.black)
+                .font(.system(size: 30))
             }
         )
     }
