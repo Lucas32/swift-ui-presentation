@@ -16,7 +16,9 @@ struct QueEs: View {
                     Text("SwiftUI es un framework de Apple para la creación de Vistas que viene a sustituir a 'UIKit'. Está diseñado para aprovechar todo el potencial de 'Swift', ya que ha sido creado desde cero teniendo en cuenta todo lo que este lenguaje nos proporciona.")
                          
 //                    Text("Usa una sintaxis declarativa (en lugar de imperativa como 'UIKit'). Esto quiere decir que nuestra aplicación responderá a estados y dependiendo del estado en cuestión sabrá qué tarea debe realizar o qué vista se debería mostrar.")
-                    Image("swiftUI").resizable()
+                    Image("swiftUI")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
                     
                         .padding(.top, 8)
                 }.multilineTextAlignment(.leading)

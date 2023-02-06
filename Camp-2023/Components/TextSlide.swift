@@ -18,22 +18,18 @@ struct TextSlide<Content: View>: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.system(size: 50))
+                        .font(.system(size: 55))
                         .foregroundColor(.white)
                     content()
                         .padding(.top, 4)
-                        .font(.system(size: 30))
+                        .font(.system(size: 45))
                     
                     Spacer()
                 }
                 .padding(.top, 75)
-                .padding(.trailing,
-                    proxy.size.width * Background.swiftLogoScreenPortion +
-                    Background.paddingTrailing + 20
-                )
                 Spacer()
             }
-            .padding(.leading, 50)
+            .padding(.horizontal, 50)
             .background {
                 Background(proxy: proxy)
             }

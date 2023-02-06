@@ -13,7 +13,7 @@ struct CodigoConciso: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 4) {
-                SubTitle(title: "Código más conciso y más velocidad de desarrollo 📈")
+                SubTitle(title: "Código conciso y más velocidad de desarrollo 📈")
                     .padding()
                                 
                 HStack {
@@ -21,7 +21,6 @@ struct CodigoConciso: View {
                     Image("codigo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(height: 350)
                     Spacer()
                 }
                 

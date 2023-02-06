@@ -25,7 +25,6 @@ struct LoMalo: View {
                 }
                 .tabViewStyle(.page)
                 .foregroundColor(.black)
-                .font(.system(size: 30))
             }
         )
     }

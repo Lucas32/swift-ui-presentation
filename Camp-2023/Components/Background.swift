@@ -15,25 +15,24 @@ struct Background: View {
     static var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
     
     var body: some View {
-        ZStack(alignment: .trailing) {
+        ZStack(alignment: .topTrailing) {
             Image("presentation")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: proxy.size.width, height: proxy.size.height)
-            
-            Image("swift_logo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: proxy.size.width * Background.swiftLogoScreenPortion)
-                .padding(.trailing, Background.paddingTrailing)
-            
-            VStack {
-                Text("SwiftUI: Lo bueno y lo malo")
-                    .foregroundColor(.white)
-                    .font(.system(size: 30))
-                    .padding()
-                Spacer()
-            }
+                HStack {
+                    Image("swift_logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 40, height: 40)
+                        
+                    
+                    Text("SwiftUI: Lo bueno y lo malo")
+                        .foregroundColor(.white)
+                        .font(.system(size: 30))
+                        .padding()
+                    
+                }
             .padding()
         }
     }

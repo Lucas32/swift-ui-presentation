@@ -33,7 +33,6 @@ struct LoBueno: View {
                 }
                 .tabViewStyle(.page)
                 .foregroundColor(.black)
-                .font(.system(size: 30))
             }
         )
     }
@@ -45,7 +44,7 @@ struct SubTitle: View {
     var body: some View {
         Text(title)
             .foregroundColor(.white)
-            .font(.system(size: 36))
+            .font(.system(size: 55))
             .padding(.vertical, 12)
     }
 }
