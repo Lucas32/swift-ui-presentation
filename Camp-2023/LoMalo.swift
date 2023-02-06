@@ -19,7 +19,8 @@ struct LoMalo: View {
                         .padding(.horizontal, 4)
                     InfraestructuraUIKitAppKit()
                         .padding(.horizontal, 4)
-                    
+                    UsarEnvironmentObject()
+                        .padding(.horizontal, 4)
                 }
                 .tabViewStyle(.page)
                 .foregroundColor(.black)

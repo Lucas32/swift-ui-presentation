@@ -35,6 +35,7 @@
 		5B2A9950298C43B900A165CE /* LenguajeJoven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A994F298C43B900A165CE /* LenguajeJoven.swift */; };
 		5B2A9952298C467E00A165CE /* SoportadoDesde13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */; };
 		5B2A9954298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */; };
+		5B460C862991511B00F1A87F /* UsarEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		5B2A994F298C43B900A165CE /* LenguajeJoven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenguajeJoven.swift; sourceTree = "<group>"; };
 		5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoportadoDesde13.swift; sourceTree = "<group>"; };
 		5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraestructuraUIKitAppKit.swift; sourceTree = "<group>"; };
+		5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsarEnvironmentObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				5B2A994F298C43B900A165CE /* LenguajeJoven.swift */,
 				5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */,
 				5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */,
+				5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */,
 			);
 			path = LoMalo;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				10F90337298BE34300315F4E /* PresentationApp.swift in Sources */,
 				10F9035B298C1CEE00315F4E /* PreviewsView.swift in Sources */,
 				5B2A9952298C467E00A165CE /* SoportadoDesde13.swift in Sources */,
+				5B460C862991511B00F1A87F /* UsarEnvironmentObject.swift in Sources */,
 				10F90342298BFA2200315F4E /* Background.swift in Sources */,
 				10F9034E298C0A9E00315F4E /* Preguntas.swift in Sources */,
 			);
@@ -523,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Camp-2023/Preview Content\"";
-				DEVELOPMENT_TEAM = TW838WTZ6V;
+				DEVELOPMENT_TEAM = W3XLFNW8UR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -537,7 +541,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -561,7 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Camp-2023/Preview Content\"";
-				DEVELOPMENT_TEAM = TW838WTZ6V;
+				DEVELOPMENT_TEAM = W3XLFNW8UR;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -575,7 +579,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
