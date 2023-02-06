@@ -11,58 +11,57 @@ struct Menu: View {
     private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
     
     var body: some View {
-        GeometryReader { proxy in
-            NavigationView {
-                HStack {
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text("SwiftUI")
-                            .font(.system(size: idiom == .pad ? 100 : 50))
-                        
-                        VStack(alignment: .leading, spacing: 0) {
-                            NavigationLink(destination: QueEs()) {
-                                Item(text: "Qué es")
-                            }
-                            NavigationLink(destination: LoBueno()) {
-                                Item(text: "Lo bueno")
-                            }
-                            NavigationLink(destination: LoMalo()) {
-                                Item(text: "Lo malo")
-                            }
-                            NavigationLink(destination: LoPeor()) {
-                                Item(text: "Lo peor")
-                            }
-                            NavigationLink(destination: Conclusiones()) {
-                                Item(text: "Conclusiones")
-                            }
-                            NavigationLink(destination: Preguntas()) {
-                                Item(text: "Preguntas")
-                            }
+        NavigationView {
+            HStack {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("SwiftUI")
+                        .font(.system(size: idiom == .pad ? 100 : 50))
+                    
+                    VStack(alignment: .leading, spacing: 15) {
+                        NavigationLink(destination: QueEs()) {
+                            Item(text: "Qué es")
                         }
-                        .font(.system(size: 60))
-                        .padding(.top, 20)
-                        
-                    }.padding(.leading, idiom == .pad ? 100 : 30)
-                    Spacer()
-                }
-                .background {
-                    ZStack {
-                        Image("presentation")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: proxy.size.width, height: proxy.size.height)
-                        
-                        Image("swift_logo")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: proxy.size.width / 4)
-                            .padding(.leading, idiom == .pad ? 300 : 250)
+                        NavigationLink(destination: LoBueno()) {
+                            Item(text: "Lo bueno")
+                        }
+                        NavigationLink(destination: LoMalo()) {
+                            Item(text: "Lo malo")
+                        }
+                        NavigationLink(destination: Conclusiones()) {
+                            Item(text: "Conclusiones")
+                        }
+                        NavigationLink(destination: Preguntas()) {
+                            Item(text: "Preguntas")
+                        }
                     }
+                    .font(.system(size: 60))
+                    .padding(.top, 20)
+                    
+                }
+                .padding(.leading, idiom == .pad ? 100 : 30)
+                Spacer()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
+            .background {
+                ZStack {
+                    Image("presentation")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+                        .ignoresSafeArea(.all)
+                    
+                    Image("swift_logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: UIScreen.main.bounds.size.width / 4)
+                        .padding(.leading, idiom == .pad ? 300 : 250)
                 }
             }
-            .navigationViewStyle(.stack)
-            .foregroundColor(.white)
-            .frame(width: proxy.size.width, height: proxy.size.height)
-        }.edgesIgnoringSafeArea(.all)
+        }
+        .edgesIgnoringSafeArea(.all)
+        .navigationViewStyle(.stack)
+        .foregroundColor(.white)
     }
     
     struct Item: View {
@@ -70,13 +69,13 @@ struct Menu: View {
         private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
         
         var body: some View {
-            HStack(spacing: idiom == .pad ? 40 : 10) {
+            HStack(spacing: idiom == .pad ? 20 : 10) {
                 Circle()
                     .frame(width: idiom == .pad ? 20 : 10)
-                    
+                
                 Text(text)
-                    .font(.system(size: idiom == .pad ? 40 : 30))
-            }
+                    .font(.system(size: idiom == .pad ? 50 : 30))
+            }.fixedSize()
         }
     }
 }

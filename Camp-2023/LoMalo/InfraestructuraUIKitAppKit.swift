@@ -14,6 +14,7 @@ struct InfraestructuraUIKitAppKit: View {
                 SubTitle(title: "Infraestructura basada en UIKit y AppKit 🚧🏗️👷")
                 
                 Text("Debajo de la API de SwiftUI hay componentes implementados con UIKit/AppKit.")
+                Text("Se podría imaginar en un futuro a SwiftUI completamente desconectado de sus predecesores,  pero hoy en día depende completamente de ellos.")
             }.padding()
         }
         .background {

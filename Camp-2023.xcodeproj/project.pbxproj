@@ -21,7 +21,7 @@
 		10F90344298BFA9800315F4E /* TextSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90343298BFA9800315F4E /* TextSlide.swift */; };
 		10F90346298C08E700315F4E /* LoBueno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90345298C08E700315F4E /* LoBueno.swift */; };
 		10F90348298C096A00315F4E /* LoMalo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90347298C096A00315F4E /* LoMalo.swift */; };
-		10F9034A298C098E00315F4E /* LoPeor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90349298C098E00315F4E /* LoPeor.swift */; };
+		10F9034A298C098E00315F4E /* IdentificarCrashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90349298C098E00315F4E /* IdentificarCrashes.swift */; };
 		10F9034C298C09B800315F4E /* Conclusiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9034B298C09B800315F4E /* Conclusiones.swift */; };
 		10F9034E298C0A9E00315F4E /* Preguntas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9034D298C0A9E00315F4E /* Preguntas.swift */; };
 		10F90352298C0D7600315F4E /* CrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90351298C0D7600315F4E /* CrashView.swift */; };
@@ -33,7 +33,6 @@
 		10F90361298C1D8F00315F4E /* Interoperabilidad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90360298C1D8F00315F4E /* Interoperabilidad.swift */; };
 		10F90363298C244700315F4E /* RoundedWhiteTransparentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F90362298C244700315F4E /* RoundedWhiteTransparentBackground.swift */; };
 		5B2A9950298C43B900A165CE /* LenguajeJoven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A994F298C43B900A165CE /* LenguajeJoven.swift */; };
-		5B2A9952298C467E00A165CE /* SoportadoDesde13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */; };
 		5B2A9954298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */; };
 		5B460C862991511B00F1A87F /* UsarEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */; };
 /* End PBXBuildFile section */
@@ -74,7 +73,7 @@
 		10F90343298BFA9800315F4E /* TextSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSlide.swift; sourceTree = "<group>"; };
 		10F90345298C08E700315F4E /* LoBueno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoBueno.swift; sourceTree = "<group>"; };
 		10F90347298C096A00315F4E /* LoMalo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoMalo.swift; sourceTree = "<group>"; };
-		10F90349298C098E00315F4E /* LoPeor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoPeor.swift; sourceTree = "<group>"; };
+		10F90349298C098E00315F4E /* IdentificarCrashes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificarCrashes.swift; sourceTree = "<group>"; };
 		10F9034B298C09B800315F4E /* Conclusiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conclusiones.swift; sourceTree = "<group>"; };
 		10F9034D298C0A9E00315F4E /* Preguntas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preguntas.swift; sourceTree = "<group>"; };
 		10F90351298C0D7600315F4E /* CrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashView.swift; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 		10F90360298C1D8F00315F4E /* Interoperabilidad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interoperabilidad.swift; sourceTree = "<group>"; };
 		10F90362298C244700315F4E /* RoundedWhiteTransparentBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteTransparentBackground.swift; sourceTree = "<group>"; };
 		5B2A994F298C43B900A165CE /* LenguajeJoven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LenguajeJoven.swift; sourceTree = "<group>"; };
-		5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoportadoDesde13.swift; sourceTree = "<group>"; };
 		5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfraestructuraUIKitAppKit.swift; sourceTree = "<group>"; };
 		5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsarEnvironmentObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +150,6 @@
 				10F90353298C1C2900315F4E /* LoBueno */,
 				10F90347298C096A00315F4E /* LoMalo.swift */,
 				5B2A994E298C438600A165CE /* LoMalo */,
-				10F90349298C098E00315F4E /* LoPeor.swift */,
 				10F9034B298C09B800315F4E /* Conclusiones.swift */,
 				10F9034D298C0A9E00315F4E /* Preguntas.swift */,
 				10F90351298C0D7600315F4E /* CrashView.swift */,
@@ -212,9 +209,9 @@
 			isa = PBXGroup;
 			children = (
 				5B2A994F298C43B900A165CE /* LenguajeJoven.swift */,
-				5B2A9951298C467E00A165CE /* SoportadoDesde13.swift */,
 				5B2A9953298C4C6500A165CE /* InfraestructuraUIKitAppKit.swift */,
 				5B460C852991511B00F1A87F /* UsarEnvironmentObject.swift */,
+				10F90349298C098E00315F4E /* IdentificarCrashes.swift */,
 			);
 			path = LoMalo;
 			sourceTree = "<group>";
@@ -356,7 +353,7 @@
 				10F9035F298C1D6400315F4E /* PermiteCrearWidgets.swift in Sources */,
 				10F9035D298C1D3700315F4E /* NoMasStoryboards.swift in Sources */,
 				10F90344298BFA9800315F4E /* TextSlide.swift in Sources */,
-				10F9034A298C098E00315F4E /* LoPeor.swift in Sources */,
+				10F9034A298C098E00315F4E /* IdentificarCrashes.swift in Sources */,
 				10F90363298C244700315F4E /* RoundedWhiteTransparentBackground.swift in Sources */,
 				10F9033D298BF75600315F4E /* QueEs.swift in Sources */,
 				10F90361298C1D8F00315F4E /* Interoperabilidad.swift in Sources */,
@@ -369,7 +366,6 @@
 				10F90348298C096A00315F4E /* LoMalo.swift in Sources */,
 				10F90337298BE34300315F4E /* PresentationApp.swift in Sources */,
 				10F9035B298C1CEE00315F4E /* PreviewsView.swift in Sources */,
-				5B2A9952298C467E00A165CE /* SoportadoDesde13.swift in Sources */,
 				5B460C862991511B00F1A87F /* UsarEnvironmentObject.swift in Sources */,
 				10F90342298BFA2200315F4E /* Background.swift in Sources */,
 				10F9034E298C0A9E00315F4E /* Preguntas.swift in Sources */,

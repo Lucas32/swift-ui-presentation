@@ -13,11 +13,8 @@ struct Conclusiones: View {
             title: "Conclusiones 👨‍💻",
             content: {
                 VStack (alignment: .leading){
-                    Text("No solo representa el futuro del desarrollo en Apple si no es el 'Ahora'")
-                    Text("Es necesario para widgets")
-                    Text("La compatibilidad no es un problema")
-                    Text("Framework moderno")
-                    Text("Desarrollo 100% SwiftUI es casi imposible")
+                    Text("Con el paso del tiempo SwiftUI será el estandarte en el desarrollo para iOS y Mac.")
+                    Text("A pesar de tener ciertas limitaciones, estas disminuiran a medida que la tecnología evolucione y mejore con el tiempo.")
                 }
             }
         )

@@ -15,12 +15,13 @@ struct LoMalo: View {
                 TabView() {
                     LenguajeJoven()
                         .padding(.horizontal, 4)
-                    SoportadoDesde13()
-                        .padding(.horizontal, 4)
+//                    SoportadoDesde13()
+//                        .padding(.horizontal, 4)
                     InfraestructuraUIKitAppKit()
                         .padding(.horizontal, 4)
                     UsarEnvironmentObject()
                         .padding(.horizontal, 4)
+                    IdentificarCrashes()
                 }
                 .tabViewStyle(.page)
                 .foregroundColor(.black)

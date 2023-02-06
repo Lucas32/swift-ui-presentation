@@ -13,7 +13,9 @@ struct LenguajeJoven: View {
             VStack(alignment: .leading, spacing: 10) {
                 SubTitle(title: "Lenguaje Joven 👦")
                 
-                Text("Como es un lenguaje joven, la comunidad es relativamente chica")
+                Text("Como es un lenguaje joven, la comunidad es relativamente chica.")
+                Text("Fue publicado junto con iOS 13.")
+                Text("A partir de la versión 2.0 es considerado “listo para producción”, pero todavía no tiene las mismas posibilidades que UIKit/AppKit.")
             }.padding()
         }
         .background {

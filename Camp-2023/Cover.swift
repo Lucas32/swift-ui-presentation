@@ -16,17 +16,17 @@ struct Cover: View {
                 Spacer()
                 VStack(spacing: 0) {
                     Spacer()
-                    HStack {
+                    HStack(alignment: .center) {
                         Image("swiftui-96x96_2x")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 200)
+                            .frame(width: 280)
                         
-                        VStack(alignment: .leading) {
+                        VStack(alignment: .leading, spacing: 0) {
                             Text("SwiftUI")
-                                .font(.system(size: 100))
-                            Text("Lo bueno, lo malo y lo peor")
-                                .font(.system(size: 40))
+                                .font(.system(size: 150))
+                            Text("Lo bueno y lo malo")
+                                .font(.system(size: 60))
                         }
                     }
                     Spacer()

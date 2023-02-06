@@ -28,7 +28,7 @@ struct Background: View {
                 .padding(.trailing, Background.paddingTrailing)
             
             VStack {
-                Text("SwiftUI: Lo bueno, lo malo y lo peor")
+                Text("SwiftUI: Lo bueno y lo malo")
                     .foregroundColor(.white)
                     .font(.system(size: 30))
                     .padding()
