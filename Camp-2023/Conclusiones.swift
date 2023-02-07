@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct Conclusiones: View {
+    @Binding var timeRemaining: Int
     var body: some View {
         TextSlide(
             title: "Conclusiones 👨‍💻",
+            timeRemaining: $timeRemaining,
             content: {
                 VStack (alignment: .leading){
                     Text("Con el paso del tiempo SwiftUI será el estandarte en el desarrollo para iOS y Mac.")
@@ -23,6 +25,6 @@ struct Conclusiones: View {
 
 struct Conclusiones_Previews: PreviewProvider {
     static var previews: some View {
-        Conclusiones()
+        Conclusiones(timeRemaining: Binding.constant(10))
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TextSlide<Content: View>: View {
     var title: String
+    @Binding var timeRemaining: Int
     var content: () -> Content
     
     private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
@@ -31,7 +32,7 @@ struct TextSlide<Content: View>: View {
             }
             .padding(.horizontal, 50)
             .background {
-                Background(proxy: proxy)
+                Background(timeRemaining: $timeRemaining, proxy: proxy)
             }
             .navigationBarTitleDisplayMode(.inline)
             .frame(width: proxy.size.width, height: proxy.size.height)
@@ -43,6 +44,7 @@ struct TextSlide_Previews: PreviewProvider {
     static var previews: some View {
         TextSlide(
             title: "Title asdj lakdj lkadjlkadj lkajd jlkaskjd la",
+            timeRemaining: Binding.constant(10),
             content: {
                 Text("Ejemploasd lkasdlk adnkland kalnd knladnkla lkdnasnkan")
             }

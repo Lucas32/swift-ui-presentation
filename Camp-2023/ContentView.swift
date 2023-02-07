@@ -10,12 +10,21 @@ import SwiftUI
 struct ContentView: View {
     
     @State var startedPresentation = false
-    
+    @State private var timeRemaining = 2400
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
-        if (!startedPresentation) {
-            Cover(startedPresentation: $startedPresentation)
-        } else {
-            Menu()
+        
+        ZStack {
+            if (!startedPresentation) {
+                Cover(startedPresentation: $startedPresentation)
+            } else {
+                Menu(timeRemaining: $timeRemaining)
+            }
+        }
+        .onReceive(timer) { time in
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            }
         }
     }
 }

@@ -9,28 +9,30 @@ import SwiftUI
 
 struct Menu: View {
     private var idiom : UIUserInterfaceIdiom { UIDevice.current.userInterfaceIdiom }
-    
+    @Binding var timeRemaining: Int
     var body: some View {
         NavigationView {
+            
             HStack {
                 VStack(alignment: .leading, spacing: 10) {
+                   
                     Text("SwiftUI")
                         .font(.system(size: idiom == .pad ? 100 : 50))
                     
                     VStack(alignment: .leading, spacing: 15) {
-                        NavigationLink(destination: QueEs()) {
+                        NavigationLink(destination: QueEs(timeRemaining: $timeRemaining)) {
                             Item(text: "Qué es")
                         }
-                        NavigationLink(destination: LoBueno()) {
+                        NavigationLink(destination: LoBueno(timeRemaining: $timeRemaining)) {
                             Item(text: "Lo bueno")
                         }
-                        NavigationLink(destination: LoMalo()) {
+                        NavigationLink(destination: LoMalo(timeRemaining: $timeRemaining)) {
                             Item(text: "Lo malo")
                         }
-                        NavigationLink(destination: Conclusiones()) {
+                        NavigationLink(destination: Conclusiones(timeRemaining: $timeRemaining)) {
                             Item(text: "Conclusiones")
                         }
-                        NavigationLink(destination: Preguntas()) {
+                        NavigationLink(destination: Preguntas(timeRemaining: $timeRemaining)) {
                             Item(text: "Preguntas")
                         }
                     }
@@ -51,6 +53,14 @@ struct Menu: View {
                         .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
                         .ignoresSafeArea(.all)
                     
+                    VStack {
+                        HStack {
+                            Spacer()
+                            TimerRendering(timeRemaining: $timeRemaining)
+                        }
+                        Spacer()
+                    }.padding()
+                    
                     Image("swift_logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -62,6 +72,11 @@ struct Menu: View {
         .edgesIgnoringSafeArea(.all)
         .navigationViewStyle(.stack)
         .foregroundColor(.white)
+
+    }
+    
+    func secondsToHoursMinutesSeconds(_ seconds: Int) -> (Int, Int, Int) {
+        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
     
     struct Item: View {
@@ -80,8 +95,9 @@ struct Menu: View {
     }
 }
 
+
 struct FirstSlide_Previews: PreviewProvider {
     static var previews: some View {
-        Menu()
+        Menu(timeRemaining: Binding.constant(10))
     }
 }

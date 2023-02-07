@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct QueEs: View {
+    @Binding var timeRemaining: Int
     var body: some View {
         TextSlide(
             title: "¿Qué es?",
+            timeRemaining: $timeRemaining,
             content: {
                 VStack(alignment: .leading) {
                     Text("SwiftUI es un framework de Apple para la creación de Vistas que viene a sustituir a 'UIKit'. Está diseñado para aprovechar todo el potencial de 'Swift', ya que ha sido creado desde cero teniendo en cuenta todo lo que este lenguaje nos proporciona.")
@@ -29,6 +31,6 @@ struct QueEs: View {
 
 struct QueEs_Previews: PreviewProvider {
     static var previews: some View {
-        QueEs()
+        QueEs(timeRemaining: Binding.constant(10))
     }
 }

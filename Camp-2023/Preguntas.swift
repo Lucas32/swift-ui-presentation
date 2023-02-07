@@ -11,10 +11,11 @@ struct Preguntas: View {
     @State var offsetX: CGFloat = 0
     @State var offsetY: CGFloat = 0
     @State var move: Bool = false
-    
+    @Binding var timeRemaining: Int
     var body: some View {
         TextSlide(
             title: "Preguntas",
+            timeRemaining: $timeRemaining,
             content: {
                 GeometryReader { proxy in
                     ZStack {
@@ -85,6 +86,6 @@ struct Preguntas: View {
 
 struct Preguntas_Previews: PreviewProvider {
     static var previews: some View {
-        Preguntas()
+        Preguntas(timeRemaining: Binding.constant(10))
     }
 }

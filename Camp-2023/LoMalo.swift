@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct LoMalo: View {
+    @Binding var timeRemaining: Int
     var body: some View {        
         TextSlide(
             title: "Lo malo ❌",
+            timeRemaining: $timeRemaining,
             content: {
                 TabView() {
                     LenguajeJoven()
@@ -32,6 +34,6 @@ struct LoMalo: View {
 
 struct LoMalo_Previews: PreviewProvider {
     static var previews: some View {
-        LoMalo()
+        LoMalo(timeRemaining: Binding.constant(10))
     }
 }
