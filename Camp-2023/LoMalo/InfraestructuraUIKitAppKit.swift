@@ -16,7 +16,7 @@ struct InfraestructuraUIKitAppKit: View {
                 Text("Debajo de la API de SwiftUI hay componentes implementados con UIKit/AppKit.")
                 Text("Se podría imaginar en un futuro a SwiftUI completamente desconectado de sus predecesores,  pero hoy en día depende completamente de ellos.")
             }.padding()
-            Image("uikit-swiftui")
+            Image("uikit-swiftui-2")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
 //                .frame(width: 250)
