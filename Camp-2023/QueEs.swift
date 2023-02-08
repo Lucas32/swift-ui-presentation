@@ -9,6 +9,8 @@ import SwiftUI
 
 struct QueEs: View {
     @Binding var timeRemaining: Int
+    @State var imageName = ""
+    
     var body: some View {
         TextSlide(
             title: "¿Qué es?",
@@ -21,7 +23,6 @@ struct QueEs: View {
                     Image("swiftUI")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    
                         .padding(.top, 8)
                 }.multilineTextAlignment(.leading)
             }
