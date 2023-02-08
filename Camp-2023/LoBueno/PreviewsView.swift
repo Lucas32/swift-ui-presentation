@@ -8,21 +8,29 @@
 import SwiftUI
 
 struct PreviewsView: View {
+    @State var showImages = false
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 10) {
                 SubTitle(title: "Previews 🖥")
+                if showImages {
+                    HStack {
+                        Image("preview_waiting")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                        Image("preview_error")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
+                } else  {
+                    Text("Gracias a los previews es posible visualizar la renderización de una vista en SwiftUI directamente. Con cualquier cambio en el código, la vista es recargada, y se puede interactuar con ella.  Aún mejor, puedes renderizar en varias configuraciones de pantallas.")
+                }
                 
-                Text("Su gran integración con Xcode lo convierte en un gran asset. Gracias a los Previews es posible visualizar la renderización de una vista en SwiftUI directamente. Con cualquier cambio en el código, la vista es recargada, con la cual se puede interactuar.  Aún mejor, puedes renderizar en varias configuraciones de pantallas.")
             }.padding()
-            VStack {
-                Image("preview_waiting")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                Image("preview_error")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            }
+            .onTapGesture {
+                    showImages.toggle()
+                }
+            
         }
         .background {
             RoundedWhiteTransparentBackground()

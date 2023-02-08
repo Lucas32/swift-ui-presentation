@@ -13,7 +13,7 @@ struct UsarEnvironmentObject: View {
             VStack(alignment: .leading, spacing: 10) {
                 SubTitle(title: "*Usar @EnvironmentObject 🧑‍💻")
                 
-                Text("EnvironmentObject es otro Property Wrapper que usamos para proporcionar desde alguna vista padre una clase que podrá ser usada en toda su jerarquía de vistas. Es muy sencillo usarlo pero es muy dificil identificarlo cuando ocurre un crash")
+                Text("EnvironmentObject es otro Property Wrapper que usamos para proporcionar desde alguna vista padre una instancia de clase que podrá ser usada en toda su jerarquía de vistas. Es práctico para compartir estados entre distintas vistas pero puede ocasionar crashes difíciles de detectar.")
             }.padding()
         }
         .background {
