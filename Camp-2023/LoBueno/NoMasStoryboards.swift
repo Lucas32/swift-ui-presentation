@@ -9,12 +9,16 @@ import SwiftUI
 
 struct NoMasStoryboards: View {
     var body: some View {
-        VStack {
+        HStack {
             VStack(alignment: .leading, spacing: 10) {
                 SubTitle(title: "No más storyboards 🎆")
                 
                 Text("Si bien los storyboards ayudan al desarrollo de pantallas, cuando esta se vuelve compleja existen problemas con las restricciones y demás componentes. También se suelen generar conflictos difíciles de resolver cuando más de una persona realiza cambios en el mismo storyboard.")
             }.padding()
+            Image("interface-builder")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(5)
         }
         .background {
             RoundedWhiteTransparentBackground()
